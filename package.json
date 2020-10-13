@@ -25,13 +25,16 @@
   "bugs": {
     "url": "https://github.com/dnlup/hrtime-utils/issues"
   },
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "homepage": "https://github.com/dnlup/hrtime-utils#readme",
   "devDependencies": {
     "atomic-sleep": "^1.0.0",
     "markdown-toc": "^1.2.0",
     "snazzy": "^8.0.0",
     "standard": "^14.3.4",
+    "standard-version": "^9.0.0",
     "tap": "^14.10.8"
   }
 }
