@@ -1,7 +1,8 @@
 # hrtime-utils
-
+[![npm version](https://badge.fury.io/js/%40dnlup%2Fhrtime-utils.svg)](https://badge.fury.io/js/%40dnlup%2Fhrtime-utils)
 ![Tests](https://github.com/dnlup/hrtime-utils/workflows/Tests/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/dnlup/hrtime-utils/badge.svg?branch=current)](https://coveralls.io/github/dnlup/hrtime-utils?branch=current)
+[![Known Vulnerabilities](https://snyk.io/test/github/dnlup/hrtime-utils/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dnlup/hrtime-utils?targetFile=package.json)
 
 > A small collection of useful functions to work with Node.js [`process.hrtime`](https://nodejs.org/docs/latest-v12.x/api/process.html#process_process_hrtime_time)  values.
 
