@@ -1,5 +1,8 @@
 # hrtime-utils
 
+![Tests](https://github.com/dnlup/hrtime-utils/workflows/Tests/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/dnlup/hrtime-utils/badge.svg?branch=current)](https://coveralls.io/github/dnlup/hrtime-utils?branch=current)
+
 > A small collection of useful functions to work with Node.js [`process.hrtime`](https://nodejs.org/docs/latest-v12.x/api/process.html#process_process_hrtime_time)  values.
 
 `hrtime-utils` is a tiny module that exports a few useful functions that you can use to convert the value returned from `process.hrtime()` to a time unit.
@@ -52,7 +55,7 @@ hrtime2s(delta) // delta in seconds
 
 * Returns `<number>`
 
-Converts `time` to nanoseconds.
+This function converts `time` to nanoseconds.
 
 ### hrtime2ms(time)
 
@@ -60,7 +63,7 @@ Converts `time` to nanoseconds.
 
 * Returns `<number>`
 
-Converts `time` to milliseconds.
+This function converts `time` to milliseconds.
 
 ### hrtime2s(time)
 
@@ -68,8 +71,8 @@ Converts `time` to milliseconds.
 
 * Returns `<number>`
 
-Converts `time` to seconds.
+This function converts `time` to seconds.
 
 ## Note
 
-If your Node.js environment supoorts it, you could use [`process.hrtime.bigint()`](https://nodejs.org/docs/latest-v12.x/api/process.html#process_process_hrtime_bigint) instead of `process.hrtime()` and this module.
+If your Node.js environment supports it, you could use [`process.hrtime.bigint()`](https://nodejs.org/docs/latest-v12.x/api/process.html#process_process_hrtime_bigint) instead of `process.hrtime()` and this module.
