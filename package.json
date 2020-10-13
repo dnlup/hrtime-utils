@@ -1,0 +1,37 @@
+{
+  "name": "hrtime-utils",
+  "version": "1.0.0-0",
+  "description": "A small collection of useful functions to work with Node.js `process.hrtime` values",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "test": "npm run lint && tap test.js --100",
+    "test:ci": "npm run test -- --cov --coverage-report=lcovonly",
+    "doc": "markdown-toc -i README.md",
+    "prerelease": "npm cit",
+    "release": "standard-version",
+    "postrelease": "npm run push && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnlup/hrtime-utils.git"
+  },
+  "keywords": [
+    "hrtime",
+    "conversion"
+  ],
+  "author": "Daniele Belardi <dwon.dnl@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnlup/hrtime-utils/issues"
+  },
+  "files": ["index.js"],
+  "homepage": "https://github.com/dnlup/hrtime-utils#readme",
+  "devDependencies": {
+    "atomic-sleep": "^1.0.0",
+    "markdown-toc": "^1.2.0",
+    "snazzy": "^8.0.0",
+    "standard": "^14.3.4",
+    "tap": "^14.10.8"
+  }
+}
