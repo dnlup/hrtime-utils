@@ -8,7 +8,7 @@
     "test": "npm run lint && tap test.js --100",
     "test:ci": "npm run test -- --cov --coverage-report=lcovonly",
     "doc": "markdown-toc -i README.md",
-    "prerelease": "npm cit",
+    "prerelease": "npm run doc && npm cit",
     "release": "standard-version",
     "postrelease": "npm run push && npm publish"
   },
