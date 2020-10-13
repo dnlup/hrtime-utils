@@ -1,6 +1,6 @@
 {
   "name": "@dnlup/hrtime-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small collection of useful functions to work with Node.js `process.hrtime` values",
   "main": "index.js",
   "scripts": {
