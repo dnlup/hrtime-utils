@@ -10,7 +10,8 @@
     "doc": "markdown-toc -i README.md",
     "prerelease": "npm run doc && npm cit",
     "release": "standard-version",
-    "postrelease": "npm run push && npm publish"
+    "postrelease": "npm run push && npm publish",
+    "push": "git push origin --follow-tags `git rev-parse --abbrev-ref HEAD`"
   },
   "repository": {
     "type": "git",
