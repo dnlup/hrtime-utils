@@ -1,5 +1,5 @@
 {
-  "name": "hrtime-utils",
+  "name": "@dnlup/hrtime-utils",
   "version": "1.0.0",
   "description": "A small collection of useful functions to work with Node.js `process.hrtime` values",
   "main": "index.js",
@@ -16,6 +16,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dnlup/hrtime-utils.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "hrtime",
