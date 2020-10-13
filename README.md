@@ -33,7 +33,7 @@ const {
   hrtime2ns,
   hrtime2ms,
   hrtime2
-} = require('@dnlup/hrtim-utils')
+} = require('@dnlup/hrtime-utils')
 
 const time = process.hrtime()
 
