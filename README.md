@@ -16,7 +16,6 @@
   * [hrtime2ns(time)](#hrtime2nstime)
   * [hrtime2ms(time)](#hrtime2mstime)
   * [hrtime2s(time)](#hrtime2stime)
-- [Note](#note)
 
 <!-- tocstop -->
 
