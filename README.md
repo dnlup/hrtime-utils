@@ -73,7 +73,3 @@ This function converts `time` to milliseconds.
 * Returns `<number>`
 
 This function converts `time` to seconds.
-
-## Note
-
-If your Node.js environment supports it, you could use [`process.hrtime.bigint()`](https://nodejs.org/docs/latest-v12.x/api/process.html#process_process_hrtime_bigint) instead of `process.hrtime()` and this module.
