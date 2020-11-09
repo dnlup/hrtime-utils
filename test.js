@@ -4,6 +4,7 @@ const tap = require('tap')
 const sleep = require('atomic-sleep')
 const {
   hrtime2ns,
+  hrtime2us,
   hrtime2ms,
   hrtime2s
 } = require('./')
@@ -14,6 +15,16 @@ tap.test('hrtime2ns', t => {
   const end = process.hrtime(start)
   const delta = hrtime2ns(end)
   t.ok(delta >= 2e6, `value ${delta}`)
+  t.end()
+})
+
+tap.test('hrtime2us', t => {
+  const start = process.hrtime()
+  sleep(205)
+  const end = process.hrtime(start)
+  const delta = hrtime2us(end)
+  console.log(delta)
+  t.ok(delta >= 2e5, `value ${delta}`)
   t.end()
 })
 
