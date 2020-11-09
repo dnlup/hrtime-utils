@@ -14,6 +14,7 @@
 - [Usage](#usage)
 - [API](#api)
   * [hrtime2ns(time)](#hrtime2nstime)
+  * [hrtime2us(time)](#hrtime2ustime)
   * [hrtime2ms(time)](#hrtime2mstime)
   * [hrtime2s(time)](#hrtime2stime)
 
@@ -30,6 +31,7 @@ $ npm i @dnlup/hrtime-utils
 ```js
 const {
   hrtime2ns,
+  hrtime2us,
   hrtime2ms,
   hrtime2
 } = require('@dnlup/hrtime-utils')
@@ -37,12 +39,14 @@ const {
 const time = process.hrtime()
 
 hrtime2ns(time) // time in nanoseconds
+hrtime2us(time) // time in microseconds
 hrtime2ms(time) // time in milliseconds
 hrtime2s(time) // time in seconds
 
 const delta = process.hrtime(time)
 
 hrtime2ns(delta) // delta in nanoseconds
+hrtime2us(delta) // delta in microseconds
 hrtime2ms(delta) // delta in milliseconds
 hrtime2s(delta) // delta in seconds
 ```
@@ -56,6 +60,14 @@ hrtime2s(delta) // delta in seconds
 * Returns `<number>`
 
 This function converts `time` to nanoseconds.
+
+### hrtime2us(time)
+
+* `time` `<integer[]`> The return value of a [`process.hrtime()`](https://nodejs.org/docs/latest-v12.x/api/process.html#process_process_hrtime_time) call
+
+* Returns `<number>`
+
+This function converts `time` to microseconds.
 
 ### hrtime2ms(time)
 
